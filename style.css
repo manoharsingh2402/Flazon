@@ -1,0 +1,380 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    height: 3.8rem;
+    background-color: #0f1111;
+    color: white;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{ 
+    margin-left: 0.8rem;
+    width: 5rem;
+    height: 4rem; 
+    margin: 0.25rem; 
+    border-radius: 0.125rem 0 0.125rem 0;
+}
+.logo{
+    height: 98%; 
+    width: 100%; 
+    background-image: url("flazonLogo.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+header{
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 600;
+}
+body{
+    padding-top: 2rem; 
+}
+.border{
+    border: 0.1rem solid transparent;
+}
+.border:hover{
+    border: 0.1rem solid white;  
+}
+.address{
+    margin-top: 0.625rem; 
+}
+.addr-loc{
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-left: 0.19rem;
+}
+.addr-del{
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left: 0.9rem;
+}
+.addr-logo{
+    margin-top: 0.5rem; 
+    display: flex;
+    color: #cdcdcd; 
+}
+.search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40rem; 
+    height: 2.5rem; 
+    border-radius: 0.25rem;
+    background-color: pink;
+}
+.search-box{
+    width: 100%; 
+    font-size: 1rem; 
+    border: none;
+}
+.search-select{
+    text-align: center; 
+    background-color: #f3f3f3;
+    width: 3.75rem; 
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border: none;
+}
+.search-logo{
+    width: 3rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    color: #0f1111;
+}
+.search-select:active{
+    border: 0.25rem solid pink; 
+}
+.nav-first{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.search:hover{
+    border: 0.19rem solid #febd68; 
+}
+.nav-cart i{
+    font-size: 2.1rem;
+}
+.nav-cart{
+    margin-right: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.panel{
+    height: 2.5rem; 
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.panel-all{
+    margin-left: 0.8rem;
+}
+.panel-opt p{
+    display: inline;
+    margin-left: 1.5rem; 
+}
+.panel-opt{
+    width: 65%; 
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-right: 0.8rem;
+}
+/* hero section */
+
+.hero-section{
+    margin-top: 3rem;
+    height: 23.75rem; 
+    width: 100%; 
+    background-image: url("heroSection0.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: heroSect 24s linear infinite; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media(min-width: 1640px){
+    .hero-section{
+        height: 23.75rem; 
+        background-size: cover;
+        background-position: center center;
+    }
+}
+@keyframes heroSect{
+    0%{
+        background-image: url("heroSection0.png");
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image: url("heroSection1.png");
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url("heroSection2.png");
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-image: url("heroSection3.png");
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+@media(min-width: 1500px) and (max-width: 1639px){
+    .hero-section{
+        height: 21.8rem;
+    }
+}
+@media(min-width: 118.75rem) and (max-width: 1499px){
+    .hero-section{
+        height: 19.8rem;
+    }
+}
+@media(min-width: 1150px) and (max-width: 1299px){
+    .hero-section{
+        height: 18rem; 
+    }
+}
+@media(min-width: 800px) and (max-width: 1149px){
+    .hero-section{
+        height: 15.6rem; 
+    }
+}
+@media(min-width: 501px) and (max-width: 799px){
+    .hero-section{
+        height: 13.12rem; 
+    }
+}
+@media(min-width: 200px) and (max-width: 500px){
+    .hero-section{
+        height: 10rem; 
+    }
+}
+@media(max-width: 199px){
+    .hero-section{
+        height: 6.25rem; 
+    }
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 2.5rem; 
+    width: 80%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    margin-bottom: 3rem;
+}
+.hero-msg a{
+    color: #007185; 
+}
+/* shop-section */
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    background-color: #e2e7e6;
+}
+.box{
+    border: 0.125rem solid black;
+    height: 25rem; 
+    width: 23%;
+    background-color: white;
+    padding: 20px 0 15px; 
+    margin-top: 13px;
+}
+.box-img1{
+    background-image: url("health.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 18.75rem; 
+    margin: 1rem 0 1rem 0;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{
+    color: #007185; 
+}
+.box-img2{
+    background-image: url("winterEssentials.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 18.75rem; 
+    margin: 1rem 0 1rem 0;
+}
+.box-img3{
+    background-image: url("electronics.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 18.75rem; 
+    margin: 1rem 0 1rem 0;
+}
+.box-img4{
+    background-image: url("grocery.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 18.75rem; 
+    margin: 1rem 0 1rem 0;
+}
+.box-img5{
+    background-image: url("beautyItems.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 18.75rem; 
+    margin: 1rem 0 1rem 0;
+}
+.box-img6{
+    background-image: url("furniture.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 18.75rem; 
+    margin: 1rem 0 1rem 0;
+}
+.box-img7{
+    background-image: url("toy.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 18.75rem; 
+    margin: 1rem 0 1rem 0;
+}
+.box-img8{
+    background-image: url("twoWheeler.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 18.75rem; 
+    margin: 1rem 0 1rem 0;
+}
+.panel1{
+    margin-top: 0.8rem;
+    height: 3rem;
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.panel1:hover{
+    background-color: #475360;
+}
+.panel2{
+    height: 20rem;
+    background-color: #222f3d;
+    display: flex; 
+    justify-content: space-evenly;
+}
+.panel2 a{
+    color: #dddddd;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+.panel2 p{
+    color: #ffffff;
+    font-size: 1rem; 
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.panel3{
+    height: 4.3rem;  
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-top: 0.001rem solid white;
+}
+.flazon-logo{
+    margin-top: 0.4rem;
+    height: 3.3rem; 
+    border: 1.5px solid black;  
+    width: 5.5rem; 
+    background-image: url("flazonLogo.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.panel4{
+    padding: 1rem 0 0 0; 
+    height: 5rem; 
+    background-color: #0f1111;
+    color: #dddddd;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 520;
+}
+.pages a{
+    margin-right: 0.5rem;
+}
+.copyright{
+    margin-top: 1rem; 
+}
